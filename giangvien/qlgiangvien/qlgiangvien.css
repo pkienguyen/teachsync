@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-image: linear-gradient(to right, rgb(242, 252, 253), #f3f3ff);
+}
+
+header{
+    padding-top: 15px;
+    background-image: linear-gradient(to right, rgb(239, 254, 255), #cbc8fc);
+}
+
+.logo{
+    height: 55px;
+}
+
+.logo img{
+    margin-left: 10px;
+    width: 250px;
+    float:left;
+}
+
+.logo p{
+    color:rgba(0,74,173,255);
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.menu {
+    padding-top: 10px;
+    background-color: #f4f4f4;
+    text-align:center;
+    background-image: linear-gradient(to right, rgb(239, 254, 255), #cbc8fc);
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.menu hr{
+    margin-top: 10px;
+    height: 10px;
+    background-image: linear-gradient(to right, #3399ff, #3333cc);
+}
+
+.menu a{
+    margin-left:  80px;
+}
+
+.menu a:hover{
+    color: #00c9ed;
+    text-decoration: overline;
+}
+
+.menu img{
+    width: 20px;
+    margin-bottom: -3px;
+}
+
+.back img{
+    position: absolute;
+    right: 25px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, #3399ff, #3333cc);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #3333cc, #3399ff);
+    box-shadow: 0 0 5px black;
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin:0 auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+}
+
+table img{
+    width: 20px;
+}
+
+table .top {
+    background-image: linear-gradient(to right, #3399ff, #4557de);
+    color: white;
+}
+
+table tr:nth-child(even){
+    background-image: linear-gradient(to right, rgb(235, 254, 255), #e7e7ff);
+}
+
+a{
+    color: #337ab7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.user-info {
+    cursor: pointer;
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    color: #3c3e4f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.user-info img{
+    width: 30px;
+    margin-bottom: -10px;
+}
+
+.settings {
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    background-color: #2a2c3b;
+    padding: 0;
+    box-shadow: 0 0 5px black;
+    z-index: 1000;
+    display: none;
+}
+
+.settings img{
+    width: 20px;
+    margin-bottom: -5px;
+    margin-left: -33px;
+    margin-right: 8px;
+}
+
+.settings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.settings li {
+    padding: 15px 50px 15px 45px;
+}
+.settings li:hover{
+    background-color: #3c3e4f;
+}
+
+.settings a {
+    text-decoration: none;
+    color: white;
+    font-size: 11pt;
+}
+
+
+
+
+/* HỒ SƠ GIẢNG VIÊN */
+.profile-container {
+    max-width: 900px;
+    background: #fff;
+    margin: 80px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 140px;
+}
+
+.profile-header {
+    background-color: #61affd;
+    color: #fff;
+    text-align: center;
+    padding: 90px 0 20px 0;
+}
+
+.profile-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: -80px;
+}
+
+.profile-info{
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 55px;
+    float: left;
+    padding: 10px 0;
+}
+
+.profile-info p{
+    padding: 12px 0;
+}
+
+.button{
+    margin: 190px 0px 0 0;
+    text-align: end;
+}
+.button a{
+    margin-right: 30px;
+    font-style: italic;
+    font-size: 13pt;
+}

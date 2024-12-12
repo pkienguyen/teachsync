@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+form {
+    width: 70%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+
+form a{
+    position: absolute;
+    right: 30px;
+}
+
+form a img{
+    width: 20px;
+}
+
+h1 {
+    color: #2c49a8;
+}
+
+input[type="text"],input[type="date"],select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(100, 147, 208), #625cde);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(62, 112, 178), #3e3a8b);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+span{
+    color: red;
+}
+
+.form1 input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.form1 input[type="submit"] {
+    width: 18.5%;
+    background-image: linear-gradient(to right, rgb(100, 147, 208), #625cde);
+    color: white;
+    padding: 11px 0px;
+    margin-left: 8px ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form1 input[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(62, 112, 178), #3e3a8b);
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        width: 84%;
+    }
+    .form1 input[type="text"] {
+        width: 67%;
+    }
+    .form1 input[type="submit"] {
+        width: 30%;
+    }
+}

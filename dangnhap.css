@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/trangchu.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.7); /* Background mờ cho form */
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 10pt;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: white;
+} 
+
+input[type="checkbox"] {
+    margin-top: 20px;
+    float:left;
+}
+
+input[type="submit"] {
+    background-image: linear-gradient(to right, #3399ff, #3333cc);
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #3333cc, #3399ff);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: 2px solid #06f;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 0 0 40px 0;
+}
+
+p {
+    margin-top: 19px;
+}

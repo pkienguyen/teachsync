@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    background-image: linear-gradient(to right, rgb(242, 252, 253), #f3f3ff);
+}
+
+header{
+    padding-top: 15px;
+    background-image: linear-gradient(to right, rgb(239, 254, 255), #d4d2ff);
+}
+
+.logo{
+    height: 55px;
+}
+.logo img{
+    margin-left: 10px;
+    width: 250px;
+    float:left;
+}
+.logo p{
+    color:rgba(0,74,173,255);
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.menu {
+    padding-top: 10px;
+    text-align:center;
+    background-image: linear-gradient(to right, rgb(239, 254, 255), #d4d2ff);
+}
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.menu hr{
+    margin-top: 10px;
+    height: 10px;
+    background-image: linear-gradient(to right, #3399ff, #3333cc);
+}
+.menu a{
+    margin: 30px;
+}
+.menu a:hover{
+    color: #00c9ed;
+    text-decoration: overline;
+}
+.menu img{
+    width: 20px;
+    margin-bottom: -3px;
+}
+.back img{
+    position: absolute;
+    right: 25px;
+}
+
+.search {
+    padding: 15px;
+    text-align: right;
+}
+.search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+.search input[type="submit"] {
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, #3399ff, #3333cc);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.search input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #3333cc, #3399ff);
+    box-shadow: 0 0 5px black;
+}
+
+.btn{
+    position:absolute;
+    padding: 10px 15px 10px 40px;
+    background-image: linear-gradient(to right, #3399ff, #3333cc);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    top: 138px;
+    left: 20px;
+    display: none;
+    z-index: 1;
+}
+.add{
+    width: 39px;
+    background-color: #d9d9f9;
+    border-radius: 50px;
+    position: absolute;
+    top: 138px;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin:0 auto;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+table img{
+    width: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+table .top {
+    background-image: linear-gradient(to right, #3399ff, #4557de);
+    color: white;
+}
+table tr:nth-child(even){
+    background-image: linear-gradient(to right, rgb(235, 254, 255), #e7e7ff);
+}
+
+a{
+    color: #337ab7;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+
+.user-info {
+    cursor: pointer;
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    color: #3c3e4f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.user-info img{
+    width: 30px;
+    margin-bottom: -10px;
+}
+
+.settings {
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    background-color: #2a2c3b;
+    box-shadow: 0 0 5px black;
+    z-index: 1000;
+    display: none;
+}
+.settings img{
+    width: 20px;
+    margin-bottom: -5px;
+    margin-left: -33px;
+    margin-right: 8px;
+}
+.settings ul {
+    list-style: none;
+}
+.settings li {
+    padding: 15px 50px 20px 45px;
+}
+.settings li:hover{
+    background-color: #3c3e4f;
+}
+.settings a {
+    text-decoration: none;
+    color: white;
+    font-size: 11pt;
+}
+
+.mobile-btn {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: none;
+	cursor: pointer;
+}
+.mobile-btn img{
+	width: 40px;
+}
+
+.mobile-menu {
+	position: absolute;
+	left: 0px;
+	top: 55px;
+	background-color: #2a2c3b;
+	box-shadow: 0 0 5px black;
+	z-index: 10000;
+	display: none;
+}
+.mobile-menu img {
+	width: 20px;
+	margin-bottom: -5px;
+	margin-left: -33px;
+	margin-right: 8px;
+}
+.mobile-menu ul {
+	list-style: none;
+}
+.mobile-menu li {
+	padding: 20px 50px 25px 45px;
+}
+.mobile-menu li:hover {
+	background-color: #3c3e4f;
+}
+.mobile-menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 11pt;
+}
+
+.addclass, .editclass {
+    background-color: #f4f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+    width: 600px;
+    height: 330px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    position: absolute;
+    z-index: 10000;
+    display: none;
+}
+.addclass h3, .editclass h3 {
+    text-align: center;
+    color: #205375;
+    margin-top: 10px;
+}
+.addclass .box, .editclass .box {
+    width: 43%;
+    margin-bottom: 15px;
+    float: left;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 10pt;
+    font-style: italic;
+    color: #205375;
+}
+.addclass input[type="text"], .addclass select,
+.editclass input[type="text"], .editclass select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #e7eff6;
+    color: #333;
+}
+.addclass input[type="submit"], .editclass input[type="submit"] {
+    background-image: linear-gradient(to right, rgb(100, 147, 208), #625cde);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    right: 42px;
+    bottom: 30px;
+}
+.addclass input[type="submit"]:hover, .editclass input[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(62, 112, 178), #3e3a8b);
+}
+.addclass img, .editclass img {
+    width: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+}
+
+@media screen and (max-width: 1390px) {
+	.menu a{
+		display: none;
+	}
+	.fixed-menu {
+		display: none;
+	}
+	.logo {
+		display: none;
+	}
+	.mobile-btn {
+		display: block;
+	}
+	header {
+		padding-top: 40px;
+	}
+    .add {
+        top: 85px;
+    }
+    .btn {
+        top: 85px;
+    }
+    .addclass, .editclass {
+        width: 420px;
+        height: 580px;
+    }
+    .addclass .box, .editclass .box {
+        float: none;
+        width: 90%;
+    }
+    .addclass input[type="submit"], .editclass input[type="submit"] {
+        width: 82%;
+    }
+    table img{
+        padding: 5px 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table .hide {
+        display: none;
+    }
+    .addclass, .editclass {
+        width: 300px;
+        height: 590px;
+    }
+    .addclass .box, .editclass .box {
+        float: none;
+        width: 87%;
+    }
+    .addclass input[type="submit"], .editclass input[type="submit"] {
+        width: 77%;
+        right: 38px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .add, .btn {
+        margin-left: -10000px;
+    }
+}
